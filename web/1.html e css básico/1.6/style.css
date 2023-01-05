@@ -1,0 +1,19 @@
+span {
+  display: inline-block;
+  background: #ddd;
+}
+
+span {
+  /* padding: 30px 40px; */
+  padding: 40px 100px 200px 10px;
+  border: 10px solid black;
+  border-width: 20px 40px;
+  /* dessa forma podemos alterar da mesma forma q o padding, top, right, bottom, left, ou top/bottom e left/right */
+  /* -------------------------- */
+
+  /* border-top: 10px solid black;
+  border-right: 5px solid black;
+  border-bottom: 8px solid black;
+  border-left: 1px solid black;
+  exemplo de posicionamento unitário */
+}

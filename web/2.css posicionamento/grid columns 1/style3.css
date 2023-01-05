@@ -1,0 +1,73 @@
+/* .foto {
+  grid-column: 1 / -1;
+} */
+/*-1 tbm funciona, mas é uma segurança para sempre pegar de ponta a ponta*/
+
+/* Estilos Gerais */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px;
+}
+
+h1,
+p {
+  margin: 0px;
+}
+
+.titulo {
+  grid-column: 1 / -1;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+span {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.comprar {
+  background-color: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.preco {
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+  /* grid-area: 2 / 2; especifíca a área da linha/coluna onde ficará o objeto específico, neste caso, 2° coluna e 2° linha */
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+
+  /* place-items: start;
+  grid-template-rows: repeat(3, auto) 1fr; */
+  /* grid-auto-rows: 200px; define as próximas linhas como automático */
+}
+
+.info {
+  place-self: start;
+  display: grid;
+  place-items: start;
+  gap: 20px;
+}

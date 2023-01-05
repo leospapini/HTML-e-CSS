@@ -1,0 +1,25 @@
+div {
+  border: 2px solid #ccc;
+  padding: 20px 20px 40px 20px;
+  margin-top: 40px;
+  position: relative;
+  /* se o elemento q foi definido como absoluto(no caso nosso "span") estiver dentro de um elemento definido como relativo(no caso esta div) o posicionamento absoluto dele será relativo à div q ele está inserido, neste caso, top: 0px está se referindo ao limite do topo da div */
+}
+
+span {
+  background-color: #e7e7e7;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  position: absolute;
+  /* usando o posicionamento absoluto, ele passará a ser posicionado independente de qualquer informação previamente determinada */
+  top: 0px;
+  /* top 0px indica q ele deve ficar grudado na parte superior da tela 1 em cima do outro */
+}
+
+.fixo {
+  position: fixed;
+  bottom: 20px;
+  left: 9px;
+  right: 9px;
+}

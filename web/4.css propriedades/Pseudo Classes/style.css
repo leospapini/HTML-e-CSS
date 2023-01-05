@@ -1,0 +1,84 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
+  transition: 0.3s;
+  /* transition: 0.3s; adiciona um delay de animação do hover q está sendo aplicado, causando um efeito de fade in/out ao passar o mouse por cima do elemento */
+}
+
+a:hover {
+  background: #adf;
+  color: #147;
+}
+/* :hover diz respeito a qual atributo vc quer adicionar um efeito de mouse por cima, muito utilizado em botões para indicar ao usuário que aquele elemento é clicável. :hover pode ser adicionado em QUALQUER ELEMENTO */
+
+a:focus {
+  background: #cfa;
+  color: #371;
+  /* :focus é mais específico para links e outros elementos importantes, pois é uma função q modifica o estado do elemento quando o usuário utiliza o tab para selecionar partes úteis da página */
+
+  /* border: 2px solid red; */
+  /* border dentro de um :focus muda o estilo da borda q fica no elemento após ele ser selecionado com o tab */
+
+  /* outline: none; */
+  /* outline: none tira o efeito de borda q fica quando o elemento foi selecionado com o tab, não é normalmente utilizado pois confunde o usuário */
+}
+
+a:active {
+  background: #ffa;
+  color: #761;
+  /* :active se refere ao momento em q o elemento é clicado */
+}
+
+/* a:visited {
+  background: #fda;
+  color: #731;
+  :visited é específico para links, pois ele indica como este link deve aparecer após ser "clicado" ou "visitado", não é mto utilizado 
+} */
+
+.lista-1 li {
+  background: #ffa;
+}
+
+.lista-1 li:first-child {
+  background: #caf;
+}
+/* li:first-child se refere ao primeiro elemento, ou seja, o primeiro "filho" desta lista, estamos nos referindo apenas a ele. first-child tem prioridade em relação a outros comandos, mesmo q feitos abaixo dele. */
+
+.lista-1 li:last-child {
+  background: #cfa;
+}
+
+.lista-1 li:nth-child(3) {
+  background: #caf;
+}
+/* nth-child(x) é utilizado quando queremos pegar algum elemento dentro da lista q não seja o primeiro ou o último, especificamos a colocação dele dentro do (x). */
+
+.lista-2 li:nth-child(even) {
+  background: #cfa;
+}
+/* :nth-child(even) se refere a todos os elementos pares */
+
+.lista-2 li:nth-child(odd) {
+  background: #ffa;
+}
+/* :nth-child(odd) se refere a todos os elementos impares */
+
+.lista-2 li:not(:first-child, :last-child) {
+  background: #eee;
+}
+/* :not(:first-child, :last-child) se refere a, pinte todos menos o primeiro e último */
+
+.lista-2 li:nth-child(3n) {
+  background: #adf;
+}
+/* nth-child(3n) se refere a todo 3° elemento, ou seja, 3, 6, 9...*/
+
+h2:not(.contato) {
+  text-decoration: underline;
+}
+/* exemplo de q podemos fazer isso com todo elemento q quisermos */

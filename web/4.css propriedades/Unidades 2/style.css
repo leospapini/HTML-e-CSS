@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+}
+
+div {
+  background-color: lightblue;
+  width: calc(100vw - 100px);
+  /* 100% da largura - 100px */
+
+  /* width: calc(100vw / 3); */
+  /* calc() permite o css a fazer cálculos dentro dos parenteses, combinando funções, ou seja, calc(100vw / 3), vai dividir 100% do width por 3, 1/3 da largura da tela */
+
+  /* width: 100vw; */
+  /* vw = viewport width, ou seja, o tamanho da 
+  largura da tela visível */
+
+  height: 100vh;
+  /* vh = viewport hight, ou seja, o tamanho da altura da tela visível */
+}

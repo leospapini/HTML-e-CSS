@@ -1,0 +1,19 @@
+h1 {
+  margin: 0px;
+  padding: 10px;
+  background: lightblue;
+}
+
+.index1 {
+  position: relative;
+  background: greenyellow;
+  top: 20px;
+  z-index: -1;
+  /* z-index funciona em conjunto com o position: relative, pois quando dizemos q um objeto terá um posicionamento relativo, ele se "destaca" do bloco padrão do qual ele foi inserido(no caso na categoria de h1), z-index muda a camada da profundidade, ou seja, index1 ficará sempre "abaixo" dos demais objetos */
+}
+.index2 {
+  /* pelo fato do index2 estar abaixo do index1 dentro do body, o index2 tem uma "preferencia" de posicionamento das camadas em relação ao index1 */
+  position: absolute;
+  background: lightcoral;
+  top: 60px;
+}

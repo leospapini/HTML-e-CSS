@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>landmarks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav aria-label="primária">
+      <a href="/">Sobre</a>
+      <a href="/">Contato</a>
+    </nav>
+    <!-- nav cria pontos de navegação
+  aria-label é como se fosse uma tag pra aquela nav -->
+  </header>
+  <!-- header marca o cabeçalho logo de cara -->
+
+  <main>
+    <h1>Bicicletas Bikcraft</h1>
+    <p>Teste</p>
+  </main>
+  <!-- marca o ponto principal do site -->
+
+  <article aria-labelledby="sobrebik">
+    <h2 id="sobrebik">Sobre a Bikcraft</h2>
+    <p>A empresa foi fundada em 2014</p>
+  </article>
+  <!-- marca uma referência de artigo 
+  aria-labelledby cria um ponto de tag pro article referente à ID em questão-->
+
+  <section aria-label="Sobre a Surfbot">
+    <h2 id="sobrebik">Sobre a Surfbot</h2>
+    <p>A empresa foi fundada em 2014</p>
+  </section>
+  <!-- section não cria um ponto de referência logo de cara, apenas se tiver um aria-label atribuido nele-->
+
+  <aside>
+    <p>Conteúdos relacionados.</p>
+  </aside>
+  <!-- marca conteúdos extras -->
+
+  <footer>
+    <p>Alguns Direitos reservados.</p>
+  </footer>
+  <!-- marca o rodapé -->
+
+</body>
+
+</html>

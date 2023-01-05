@@ -1,0 +1,23 @@
+div {
+  border: 2px solid #ccc;
+  padding: 20px 20px 40px 20px;
+  margin-top: 40px;
+}
+
+span {
+  background-color: #e7e7e7;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+  /* consigo determinar q independente da posição q ele estava anteriormente, ele assumirá uma posição "relativa" */
+  top: -20px;
+  /* que no caso, será -20px acima da onde ele já estava */
+}
+
+.fixo {
+  position: fixed;
+  bottom: 20px;
+  left: 9px;
+  right: 9px;
+}

@@ -1,0 +1,7 @@
+A propriedade position possui valores que remove o elemento do fluxo padrão do documento. O padrão é o valor static.
+
+position: fixed;
+fixa o elemento na tela
+
+top, right, left, bottom
+define o posicionamento dos elementos que não estão no fluxo padrão.
